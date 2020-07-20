@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Ensamblaje1">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.012456 -0.0023399 0.041"
+        rpy="0 0 0" />
+      <mass
+        value="0.0065897" />
+      <inertia
+        ixx="3.2986E-07"
+        ixy="3.1383E-13"
+        ixz="-1.4774E-09"
+        iyy="1.1486E-06"
+        iyz="7.9592E-15"
+        izz="8.8906E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje1/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje1/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="frontR_shoulder">
+    <inertial>
+      <origin
+        xyz="-0.0013739 0.00048114 8.6736E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.00010125" />
+      <inertia
+        ixx="4.2278E-10"
+        ixy="2.5691E-26"
+        ixz="-1.1632E-25"
+        iyy="7.3189E-10"
+        iyz="-4.8653E-24"
+        izz="1.0109E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje1/meshes/frontR_shoulder.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje1/meshes/frontR_shoulder.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_frontR_shoulder"
+    type="continuous">
+    <origin
+      xyz="0 -0.051998 -0.0023271"
+      rpy="0 -0.20655 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="frontR_shoulder" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="frontR_arm">
+    <inertial>
+      <origin
+        xyz="1.30104260698261E-18 -0.00488026698807096 0.00228970572317479"
+        rpy="0 0 0" />
+      <mass
+        value="0.000318931846701528" />
+      <inertia
+        ixx="6.46404058432005E-09"
+        ixy="8.29603993253867E-25"
+        ixz="3.87740912134232E-26"
+        iyy="1.3837693454433E-09"
+        iyz="5.42837276987924E-25"
+        izz="6.33779853253729E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje1/meshes/frontR_arm.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje1/meshes/frontR_arm.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_frontR_arm"
+    type="continuous">
+    <origin
+      xyz="-0.0067103 0.00048114 0"
+      rpy="1.5708 0.15742 -1.5708" />
+    <parent
+      link="frontR_shoulder" />
+    <child
+      link="frontR_arm" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="frontR_leg">
+    <inertial>
+      <origin
+        xyz="0.0119829598408802 -0.000803040333446333 0.00228960464107864"
+        rpy="0 0 0" />
+      <mass
+        value="0.000406559108790346" />
+      <inertia
+        ixx="1.79969021027711E-09"
+        ixy="4.64368176989686E-09"
+        ixz="3.70693073814445E-13"
+        iyy="3.79149933222455E-08"
+        iyz="-2.28652139481243E-13"
+        izz="3.91239851830406E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje1/meshes/frontR_leg.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje1/meshes/frontR_leg.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_frontR_leg"
+    type="continuous">
+    <origin
+      xyz="0 -0.0125 0"
+      rpy="0 0 0.216" />
+    <parent
+      link="frontR_arm" />
+    <child
+      link="frontR_leg" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="frontL_shoulder">
+    <inertial>
+      <origin
+        xyz="-0.00137392332768931 0.000481135750596771 4.33680868994202E-19"
+        rpy="0 0 0" />
+      <mass
+        value="0.00010125218835314" />
+      <inertia
+        ixx="4.22775963839435E-10"
+        ixy="-4.29747591668663E-26"
+        ixz="1.29246970711411E-26"
+        iyy="7.31886920401322E-10"
+        iyz="-1.25590159127841E-26"
+        izz="1.01088402027108E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje1/meshes/frontL_shoulder.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje1/meshes/frontL_shoulder.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_frontL_shoulder"
+    type="continuous">
+    <origin
+      xyz="0 -0.030002 -0.0023271"
+      rpy="-3.1416 0.1402 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="frontL_shoulder" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="frontL_arm">
+    <inertial>
+      <origin
+        xyz="4.33680868994202E-19 -0.00488026698807096 -0.00240235889105567"
+        rpy="0 0 0" />
+      <mass
+        value="0.000318931846701529" />
+      <inertia
+        ixx="6.46404058432007E-09"
+        ixy="7.25120944079154E-25"
+        ixz="6.54312789226516E-26"
+        iyy="1.3837693454433E-09"
+        iyz="2.58493941422821E-26"
+        izz="6.33779853253732E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje1/meshes/frontL_arm.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje1/meshes/frontL_arm.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_frontL_arm"
+    type="continuous">
+    <origin
+      xyz="-0.00659764110894433 0.000481135750596771 0"
+      rpy="-1.5707963267949 -0.00973307601079597 -1.5707963267949" />
+    <parent
+      link="frontL_shoulder" />
+    <child
+      link="frontL_arm" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="frontL_leg">
+    <inertial>
+      <origin
+        xyz="0.0119805973305882 -0.000802183423469114 -0.00240262361102127"
+        rpy="0 0 0" />
+      <mass
+        value="0.000406478177626639" />
+      <inertia
+        ixx="1.79827210693805E-09"
+        ixy="4.63949051078356E-09"
+        ixz="1.2310281875682E-12"
+        iyy="3.79031911948962E-08"
+        iyz="-5.02810544549597E-13"
+        izz="3.91108954337903E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje1/meshes/frontL_leg.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje1/meshes/frontL_leg.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_frontL_leg"
+    type="continuous">
+    <origin
+      xyz="0 -0.0125 0"
+      rpy="0 0 -0.644746892981263" />
+    <parent
+      link="frontL_arm" />
+    <child
+      link="frontL_leg" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="backL_shoulder">
+    <inertial>
+      <origin
+        xyz="-0.0013739233276893 0.00550000000000002 -1.73472347597681E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.00010125218835314" />
+      <inertia
+        ixx="4.22775963839434E-10"
+        ixy="-5.76608850537939E-26"
+        ixz="-2.52031592887251E-25"
+        iyy="7.31886920401321E-10"
+        iyz="2.72542467583301E-27"
+        izz="1.01088402027108E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje1/meshes/backL_shoulder.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje1/meshes/backL_shoulder.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_backL_shoulder"
+    type="continuous">
+    <origin
+      xyz="-0.018981 -0.030002 -0.0023271"
+      rpy="-3.1416 0.18847 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="backL_shoulder" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="backL_arm">
+    <inertial>
+      <origin
+        xyz="6.93889390390723E-18 -0.00488026698807096 -0.00232448469120541"
+        rpy="0 0 0" />
+      <mass
+        value="0.000318931846701529" />
+      <inertia
+        ixx="6.46404058432006E-09"
+        ixy="5.49299625523495E-25"
+        ixz="1.55096364853693E-25"
+        iyy="1.3837693454433E-09"
+        iyz="-8.01331218410746E-25"
+        izz="6.33779853253731E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje1/meshes/backL_arm.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje1/meshes/backL_arm.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_backL_arm"
+    type="continuous">
+    <origin
+      xyz="-0.00667551530879459 0.00550000000000002 0"
+      rpy="-1.5707963267949 -0.46565117654243 -1.5707963267949" />
+    <parent
+      link="backL_shoulder" />
+    <child
+      link="backL_arm" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="backL_leg">
+    <inertial>
+      <origin
+        xyz="0.0119805343668046 -0.00080223447132861 -0.00232474534535288"
+        rpy="0 0 0" />
+      <mass
+        value="0.000406477814921333" />
+      <inertia
+        ixx="1.79871634829051E-09"
+        ixy="4.63961284334375E-09"
+        ixz="1.19316082633962E-12"
+        iyy="3.79026803300665E-08"
+        iyz="-4.95997138673606E-13"
+        izz="3.91108337971293E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje1/meshes/backL_leg.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje1/meshes/backL_leg.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_backL_leg"
+    type="continuous">
+    <origin
+      xyz="0 -0.0125 0"
+      rpy="0 0 0.111297808824472" />
+    <parent
+      link="backL_arm" />
+    <child
+      link="backL_leg" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="backR_shoulder">
+    <inertial>
+      <origin
+        xyz="-0.0013739233276893 -0.00550000000000002 8.67361737988404E-19"
+        rpy="0 0 0" />
+      <mass
+        value="0.00010125218835314" />
+      <inertia
+        ixx="4.22775963839435E-10"
+        ixy="1.50327077466351E-26"
+        ixz="2.71418638493962E-25"
+        iyy="7.31886920401322E-10"
+        iyz="7.24452589214555E-27"
+        izz="1.01088402027108E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje1/meshes/backR_shoulder.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje1/meshes/backR_shoulder.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_backR_shoulder"
+    type="continuous">
+    <origin
+      xyz="-0.019481 -0.051998 -0.0023271"
+      rpy="3.1416 -0.1296 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="backR_shoulder" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="backR_arm">
+    <inertial>
+      <origin
+        xyz="0 -0.00488026698807095 0.00241649267091316"
+        rpy="0 0 0" />
+      <mass
+        value="0.000318931846701529" />
+      <inertia
+        ixx="6.46404058432006E-09"
+        ixy="6.31694569352019E-25"
+        ixz="-1.55096364853693E-25"
+        iyy="1.3837693454433E-09"
+        iyz="1.92577986360002E-24"
+        izz="6.33779853253731E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje1/meshes/backR_arm.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje1/meshes/backR_arm.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_backR_arm"
+    type="continuous">
+    <origin
+      xyz="-0.00658350732908685 -0.00550000000000002 0"
+      rpy="-1.5707963267949 -1.01708381240659 1.5707963267949" />
+    <parent
+      link="backR_shoulder" />
+    <child
+      link="backR_arm" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="backR_leg">
+    <inertial>
+      <origin
+        xyz="0.0119805656054414 -0.000802210161060669 0.00241622890061718"
+        rpy="0 0 0" />
+      <mass
+        value="0.000406477605373121" />
+      <inertia
+        ixx="1.7983698801365E-09"
+        ixy="4.63957846843555E-09"
+        ixz="1.23105314002478E-12"
+        iyy="3.79029005525062E-08"
+        iyz="-4.99955300238908E-13"
+        izz="3.91107031538356E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje1/meshes/backR_leg.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje1/meshes/backR_leg.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_backR_leg"
+    type="continuous">
+    <origin
+      xyz="0 -0.0125 0"
+      rpy="0 0 0.184658210691208" />
+    <parent
+      link="backR_arm" />
+    <child
+      link="backR_leg" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>
