@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Ensamblaje4">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.028702370312489 0.0236416880956005 0.3"
+        rpy="0 0 0" />
+      <mass
+        value="2.91253503437809" />
+      <inertia
+        ixx="0.00831607133346217"
+        ixy="-1.06259427961001E-18"
+        ixz="6.00533124713495E-19"
+        iyy="0.0236094849210333"
+        iyz="6.23003984077875E-17"
+        izz="0.0176778889177933" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje4/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje4/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="leftFS_Link">
+    <inertial>
+      <origin
+        xyz="-0.017073 0.026 -0.0082951"
+        rpy="0 0 0" />
+      <mass
+        value="0.085942" />
+      <inertia
+        ixx="5.8621E-05"
+        ixy="-1.343E-21"
+        ixz="-1.7003E-05"
+        iyy="8.8263E-05"
+        iyz="5.0063E-21"
+        izz="4.9409E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje4/meshes/leftFS_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje4/meshes/leftFS_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leftFS_Joint"
+    type="continuous">
+    <origin
+      xyz="0.065298 -0.3675 0.041658"
+      rpy="-1.5708 -1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="leftFS_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="leftFA_Link">
+    <inertial>
+      <origin
+        xyz="-2.91797805240801E-05 -0.0421352270427828 0.0269999948268717"
+        rpy="0 0 0" />
+      <mass
+        value="0.282664104259083" />
+      <inertia
+        ixx="0.000349332087908703"
+        ixy="3.63343742945319E-08"
+        ixz="-4.71742227649422E-10"
+        iyy="0.000140930725709345"
+        iyz="-7.1786177411005E-11"
+        izz="0.000343863477947196" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje4/meshes/leftFA_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje4/meshes/leftFA_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leftFA_Joint"
+    type="continuous">
+    <origin
+      xyz="-0.0375 0.026 -0.0325"
+      rpy="3.1416 0 1.5808" />
+    <parent
+      link="leftFS_Link" />
+    <child
+      link="leftFA_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="leftFP_Link">
+    <inertial>
+      <origin
+        xyz="-0.0756692375957305 -0.0251496125644137 -0.0197449433933082"
+        rpy="0 0 0" />
+      <mass
+        value="0.120229424158974" />
+      <inertia
+        ixx="7.02564502169684E-05"
+        ixy="-0.000163445501158334"
+        ixz="1.51434333244575E-08"
+        iyy="0.000507688937787995"
+        iyz="3.73106217046827E-09"
+        izz="0.000561208642642626" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje4/meshes/leftFP_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje4/meshes/leftFP_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leftFP_Joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.14 0.0072528"
+      rpy="3.1416 0 1.8895" />
+    <parent
+      link="leftFA_Link" />
+    <child
+      link="leftFP_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="rightFS_Link">
+    <inertial>
+      <origin
+        xyz="-0.017073083220185 -0.0260000000000008 -0.00829512573723093"
+        rpy="0 0 0" />
+      <mass
+        value="0.0859423832112995" />
+      <inertia
+        ixx="5.86206942212301E-05"
+        ixy="1.75016501913386E-19"
+        ixz="-1.70027014831955E-05"
+        iyy="8.82634784349199E-05"
+        iyz="3.96675567746017E-19"
+        izz="4.94087650450277E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje4/meshes/rightFS_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje4/meshes/rightFS_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rightFS_Joint"
+    type="continuous">
+    <origin
+      xyz="0.065298 -0.2325 0.041658"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rightFS_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="rightFA_Link">
+    <inertial>
+      <origin
+        xyz="-2.91794105662657E-05 -0.0421352270723111 -0.0270000050743744"
+        rpy="0 0 0" />
+      <mass
+        value="0.282664105166215" />
+      <inertia
+        ixx="0.000349332088360571"
+        ixy="3.63366527765957E-08"
+        ixz="-4.72681744136165E-10"
+        iyy="0.000140930727122963"
+        iyz="-7.16242679417116E-11"
+        izz="0.000343863479514521" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje4/meshes/rightFA_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje4/meshes/rightFA_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rightFA_Joint"
+    type="continuous">
+    <origin
+      xyz="-0.0375000000000039 -0.0260000000000006 -0.0324999999999958"
+      rpy="0 0 -1.55070987957536" />
+    <parent
+      link="rightFS_Link" />
+    <child
+      link="rightFA_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="rightFP_Link">
+    <inertial>
+      <origin
+        xyz="-0.0756692424332023 -0.0251495964642137 0.0180541252056813"
+        rpy="0 0 0" />
+      <mass
+        value="0.120229419029893" />
+      <inertia
+        ixx="7.0256396204227E-05"
+        ixy="-0.000163445366790831"
+        ixz="1.51363794571742E-08"
+        iyy="0.000507689010721107"
+        iyz="3.74794737529403E-09"
+        izz="0.000561208662490414" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje4/meshes/rightFP_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje4/meshes/rightFP_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rightFP_Joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.139999999999997 -0.00894808346758477"
+      rpy="-3.14159265358979 0 1.83698246484381" />
+    <parent
+      link="rightFA_Link" />
+    <child
+      link="rightFP_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="rightBS_Link">
+    <inertial>
+      <origin
+        xyz="-0.017073083220185 0.0260000000000003 -0.00829512573722843"
+        rpy="0 0 0" />
+      <mass
+        value="0.0859423832112994" />
+      <inertia
+        ixx="5.86206942212301E-05"
+        ixy="1.74310151679248E-19"
+        ixz="-1.70027014831955E-05"
+        iyy="8.82634784349199E-05"
+        iyz="3.90460628754902E-19"
+        izz="4.94087650450277E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje4/meshes/rightBS_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje4/meshes/rightBS_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rightBS_Joint"
+    type="continuous">
+    <origin
+      xyz="-0.1227 -0.2325 0.041658"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rightBS_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="rightBA_Link">
+    <inertial>
+      <origin
+        xyz="-2.91797685087469E-05 -0.0421352270430016 -0.0270000051699532"
+        rpy="0 0 0" />
+      <mass
+        value="0.282664104289456" />
+      <inertia
+        ixx="0.000349332087911901"
+        ixy="3.63344478469508E-08"
+        ixz="-4.71772599504427E-10"
+        iyy="0.000140930725756618"
+        iyz="-7.17816292147051E-11"
+        izz="0.000343863477987214" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje4/meshes/rightBA_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje4/meshes/rightBA_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rightBA_Joint"
+    type="continuous">
+    <origin
+      xyz="-0.0375000000000039 0.0260000000000005 -0.032499999999996"
+      rpy="0 0 -1.56800491511519" />
+    <parent
+      link="rightBS_Link" />
+    <child
+      link="rightBA_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="rightBP_Link">
+    <inertial>
+      <origin
+        xyz="-0.0756692306062511 -0.0251496316132026 0.018054126275604"
+        rpy="0 0 0" />
+      <mass
+        value="0.120229431395219" />
+      <inertia
+        ixx="7.02565141796652E-05"
+        ixy="-0.000163445660351031"
+        ixz="1.51531043892081E-08"
+        iyy="0.000507688834711916"
+        iyz="3.71102744940758E-09"
+        izz="0.000561208602413601" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje4/meshes/rightBP_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje4/meshes/rightBP_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rightBP_Joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.139999999999996 -0.00894808346758488"
+      rpy="-3.14159265358979 0 1.88733601886022" />
+    <parent
+      link="rightBA_Link" />
+    <child
+      link="rightBP_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="leftBS_Link">
+    <inertial>
+      <origin
+        xyz="-0.0170730832201818 -0.0260000000000006 -0.00829512573723173"
+        rpy="0 0 0" />
+      <mass
+        value="0.0859423832112994" />
+      <inertia
+        ixx="5.86206942212302E-05"
+        ixy="2.29508254450804E-20"
+        ixz="-1.70027014831955E-05"
+        iyy="8.826347843492E-05"
+        iyz="4.31105647668547E-20"
+        izz="4.94087650450276E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje4/meshes/leftBS_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje4/meshes/leftBS_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leftBS_Joint"
+    type="continuous">
+    <origin
+      xyz="-0.1227 -0.3675 0.041658"
+      rpy="-1.5708 -1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="leftBS_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="leftBA_Link">
+    <inertial>
+      <origin
+        xyz="-2.91796542380984E-05 -0.0421352270508583 0.0269999948604899"
+        rpy="0 0 0" />
+      <mass
+        value="0.282664104571117" />
+      <inertia
+        ixx="0.000349332088031702"
+        ixy="3.63351507818686E-08"
+        ixz="-4.72062703609084E-10"
+        iyy="0.000140930726197346"
+        iyz="-7.17328637271273E-11"
+        izz="0.000343863478454358" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje4/meshes/leftBA_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje4/meshes/leftBA_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leftBA_Joint"
+    type="continuous">
+    <origin
+      xyz="-0.0375000000000006 -0.0260000000000007 -0.0324999999999998"
+      rpy="-3.14159265358979 0 1.5749500728207" />
+    <parent
+      link="leftBS_Link" />
+    <child
+      link="leftBA_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="leftBP_Link">
+    <inertial>
+      <origin
+        xyz="-0.0756692305512593 -0.0251496316920305 -0.0197449428173774"
+        rpy="0 0 0" />
+      <mass
+        value="0.120229431449163" />
+      <inertia
+        ixx="7.02565144574874E-05"
+        ixy="-0.000163445661009415"
+        ixz="1.51531715921693E-08"
+        iyy="0.00050768883394132"
+        iyz="3.71094373925255E-09"
+        izz="0.000561208601915842" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje4/meshes/leftBP_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ensamblaje4/meshes/leftBP_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leftBP_Joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.140000000000001 0.00725284743733368"
+      rpy="3.14159265358979 0 1.90219519591404" />
+    <parent
+      link="leftBA_Link" />
+    <child
+      link="leftBP_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>
